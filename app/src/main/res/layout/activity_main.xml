@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+    >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Information!"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This Information will be used to contact you about your service!"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_margin="10dp"
+
+     >
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/fullName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Full Name"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_marginBottom="5dp"
+             app:errorEnabled="true"
+             app:helperText="Eg: Muhammad Ahmed"
+             app:counterEnabled="true"
+             app:counterMaxLength="20"
+             app:endIconMode="clear_text"
+
+             >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/contactNo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Contact"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             android:layout_marginBottom="5dp"
+             app:errorEnabled="true"
+             app:helperText="Eg: +923*******"
+             app:prefixText="+92"
+             app:counterMaxLength="10"
+             app:endIconMode="clear_text"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:maxLength="10"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/address"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Address"
+             android:layout_marginBottom="5dp"
+             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+             app:errorEnabled="true"
+             app:helperText="Eg: Near Malir cant Karachi"
+             app:counterEnabled="true"
+             app:counterMaxLength="50"
+             app:endIconMode="clear_text"
+             >
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 />
+
+         </com.google.android.material.textfield.TextInputLayout>
+
+         <androidx.appcompat.widget.LinearLayoutCompat
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             >
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/salary"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:hint="Starting Salary"
+                 android:layout_marginBottom="5dp"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 app:errorEnabled="true"
+                 android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                 app:helperText="Eg: 10000"
+                 app:endIconMode="clear_text"
+
+                 >
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+             <com.google.android.material.textfield.TextInputLayout
+                 android:id="@+id/salary1"
+                 android:layout_width="match_parent"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:hint="Ending Salary"
+                 android:layout_marginBottom="5dp"
+                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                 app:errorEnabled="true"
+                 android:layout_marginLeft="2dp"
+                 android:layout_marginRight="2dp"
+                 app:helperText="Eg: 12000"
+                 app:endIconMode="clear_text"
+
+                 >
+                 <com.google.android.material.textfield.TextInputEditText
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     />
+
+             </com.google.android.material.textfield.TextInputLayout>
+
+         </androidx.appcompat.widget.LinearLayoutCompat>
+
+         <Button
+             android:id="@+id/submit"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="submit"
+             android:layout_marginTop="5dp"
+             />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

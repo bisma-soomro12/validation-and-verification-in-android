@@ -1,0 +1,2 @@
+rootProject.name = "Android Val and Ver"
+include ':app'
